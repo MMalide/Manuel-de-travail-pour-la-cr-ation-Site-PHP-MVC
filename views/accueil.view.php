@@ -1,0 +1,2 @@
+<h1>Accueil</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nobis illum, qui quasi earum blanditiis culpa ipsa, beatae corrupti distinctio expedita! Quidem ut est rerum, tempore commodi at perferendis corrupti.</p>

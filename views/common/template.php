@@ -10,6 +10,17 @@
 </head>
 <body>
     <?php require_once("views/common/menu.php") ?>
+
+    <?php if(!empty($_SESSION["alert"])): ?>
+         <div class="alert <?= $_SESSION['alert']['type']; ?>" role="alert">
+            <?= $_SESSION['alert']['message']; ?>
+        </div>
+
+        <?php
+        unset($_SESSION['alert']);
+         endif;
+          ?>
+
     <?=  $page_content; ?> 
 
 

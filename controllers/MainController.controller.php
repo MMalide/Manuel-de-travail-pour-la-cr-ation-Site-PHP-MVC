@@ -1,6 +1,11 @@
 <?php
+require_once("models/MainManage.model.php");
 class MainController
 {
+    private $mainManager;
+     public function __construct(){
+        $this->mainManager = new MainManager();
+    }
     private function genererPage($data)
     {
         extract($data);
@@ -23,9 +28,17 @@ class MainController
 
     public function page1()
     {
+        $datas = $this->mainManager->getDatas();
+
+        $_SESSION["alert"] = [
+            "message"=> "Exemple de message d'alerte",
+            "type"=> "alert-success",
+        ];
+
         $data_page = [
             "page_description" => "Description de la page1",
             "page_title" => "Titre de la page1",
+            "datas"=> $datas,
             "view" => "views/page1.view.php",
             "template" => "views/common/template.php",
         ];
@@ -33,6 +46,11 @@ class MainController
     }
     public function page2()
     {
+          $_SESSION["alert"] = [
+            "message"=> "Exemple de message d'alerte",
+            "type"=> "alert-danger",
+        ];
+
         $data_page = [
             "page_description" => "Description de la page2",
             "page_title" => "Titre de la page2",

@@ -20,6 +20,8 @@ class MainController
         $data_page = [
             "page_description" => "Description de la page d'accueil",
             "page_title" => "Titre de la page d'accueil",
+            "page_javascript"=> ["accueil.js"],
+            "page_css"=> ["accueil.css"],
             "view" => "views/accueil.view.php",
             "template" => "views/common/template.php",
         ];
@@ -38,6 +40,8 @@ class MainController
         $data_page = [
             "page_description" => "Description de la page1",
             "page_title" => "Titre de la page1",
+            "page_javascript"=> ["page1.js"],
+            "page_css"=>["page1.css","accueil.css"],
             "datas"=> $datas,
             "view" => "views/page1.view.php",
             "template" => "views/common/template.php",
@@ -54,6 +58,8 @@ class MainController
         $data_page = [
             "page_description" => "Description de la page2",
             "page_title" => "Titre de la page2",
+            "page_javascript"=> ["page2.js"],
+            "page_css"=> ["page2.css"],
             "view" => "views/page2.view.php",
             "template" => "views/common/template.php",
         ];
@@ -64,6 +70,8 @@ class MainController
         $data_page = [
             "page_description" => "Description de la page3",
             "page_title" => "Titre de la page3",
+            "page_javascript"=> ["page3.js"],
+            "page_css"=> ["page3.css"],
             "view" => "views/page3.view.php",
             "template" => "views/common/template.php",
         ];
@@ -75,6 +83,8 @@ class MainController
         $data_page = [
             "page_description" => "Page permettant de gerer les erreurs",
             "page_title" => "Page d'erreur",
+            "page_javascript"=> ["erreur.js"],
+            "page_css"=> ["erreur.css"],
             "msg" =>$msg,
             // "nolan" => "Tout est possible à qui rêve, ose, travaille et n'abandonne jamais.",
             // "rayan" => " Ceux qui ne font rien ne se trompent jamais.",
